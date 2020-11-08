@@ -35,4 +35,5 @@ jobs:
       - name: Installing Surge
         run: npm install -g surge
         
-      - name: surge ./build http://gleaming-engine.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
+      - name: Run Surge
+        run: surge ./build http://gleaming-engine.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
